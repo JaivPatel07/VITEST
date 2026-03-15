@@ -1,0 +1,24 @@
+{
+  "name": "vitest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaivPatel07/VITEST.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/JaivPatel07/VITEST/issues"
+  },
+  "homepage": "https://github.com/JaivPatel07/VITEST#readme",
+  "devDependencies": {
+    "vitest": "^4.1.0"
+  }
+}
