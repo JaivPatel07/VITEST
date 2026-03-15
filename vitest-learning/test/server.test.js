@@ -1,16 +1,16 @@
 import { describe, test, expect } from "vitest"
 import request from "supertest"
-import app from "../src/server.js"
+import app from "../src/app.js"
 
 describe("API tests", () => {
 
-  test("GET /hello should return message", async () => {
+  test("GET /hello", async () => {
 
-    const response = await request(app).get("/hello")
+    const res = await request(app).get("/hello")
 
-    expect(response.status).toBe(200)
+    expect(res.status).toBe(200)
 
-    expect(response.body.message).toBe("Hello World")
+    expect(res.body.message).toBe("Hello World")
 
   })
 
