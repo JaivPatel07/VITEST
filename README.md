@@ -13,48 +13,52 @@ VITEST/
 	README.md
 	vitest-learning/
 		package.json
-		src/
+		learning/
 			app.js
 			calc.js
 			math.js
 			server.js
-		test/
+		learning_test/
 			calc.test.js
 			math.test.js
 			server.test.js
+		task/
+			task1.js
+		task_test/
+			task1.test.js
 ```
 
 ## Project Notes
 
-The working app is inside `vitest-learning`.
+The working app is inside `vitest-learning/learning`.
 
-- `src/math.js`
+- `learning/math.js`
 	- `add(a, b)` returns sum
 	- `multiply(a, b)` returns product
 
-- `src/calc.js`
+- `learning/calc.js`
 	- `calculateTotal(price, taxFunction)`
 	- receives a tax callback, computes `price + tax`
 	- useful example of dependency injection for testability
 
-- `src/app.js`
+- `learning/app.js`
 	- creates an Express app
 	- defines `GET /hello` returning `{ message: "Hello World" }`
 
-- `src/server.js`
+- `learning/server.js`
 	- starts HTTP server on port `3000`
 
 ## Test Notes
 
-- `test/math.test.js`
+- `learning_test/math.test.js`
 	- validates `add` and `multiply`
 	- uses `beforeEach` for shared values
 
-- `test/calc.test.js`
+- `learning_test/calc.test.js`
 	- uses `vi.fn()` to mock tax calculation
 	- verifies callback-driven logic in `calculateTotal`
 
-- `test/server.test.js`
+- `learning_test/server.test.js`
 	- uses `supertest` against Express app instance
 	- verifies status `200` and response body for `GET /hello`
 
@@ -70,7 +74,7 @@ npm test
 To run the server manually:
 
 ```bash
-node src/server.js
+node learning/server.js
 ```
 
 Then open:
