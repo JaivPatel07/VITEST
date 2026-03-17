@@ -1,5 +1,5 @@
 import { describe, test, expect,beforeEach,afterEach } from "vitest"
-import { add, multiply } from "../src/math.js"
+import { add, multiply } from "../learning/math.js"
 
 let numberA
 let numberB

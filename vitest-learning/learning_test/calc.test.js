@@ -1,5 +1,5 @@
 import { describe, test, expect, vi } from "vitest"
-import { calculateTotal } from "../src/calc.js"
+import { calculateTotal } from "../learning/calc.js"
 
 //Mock = fake function used to replace real dependencies during tests
 

@@ -1,6 +1,6 @@
 import { describe, test, expect } from "vitest"
 import request from "supertest"
-import app from "../src/app.js"
+import app from "../learning/app.js"
 
 describe("API tests", () => {
 
